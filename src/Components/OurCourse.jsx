@@ -5,7 +5,7 @@ const OurCourse = () => {
 
     return (
         <div>
-            <Box m={10}>
+            <Box m={10} mt={"90px"}>
                 <Heading fontSize={'45px'}>Our Courses</Heading>
                 <Text fontSize={'25px'} fontWeight={'700'}>
                     <Text> Practice-Based Learning Tracks, <span style={{ color: "#ED0331" }}> Supercharged By A.I.</span> </Text>

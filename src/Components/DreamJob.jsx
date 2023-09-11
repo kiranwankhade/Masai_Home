@@ -3,7 +3,7 @@ import React from "react";
 
 const DreamJob = () => {
   return (
-    <Box w={"100%"}>
+    <Box w={"100%"} mt={"70px"}>
       <Image
         width={"100%"}
         src="https://masai-website-images.s3.ap-south-1.amazonaws.com/desktop_3.webp"
