@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Components/Navbar';
+import DreamJob from './Components/DreamJob';
 
 import Impact from './Components/bottomsection/Impact';
 
@@ -13,15 +14,13 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-
-      <Impact/>
-
+      <DreamJob/>
       <OurCourse/>
       <Curriculum/>
       <Masaiverse/>
       <HiringPartners/>
-
-    </div>
+      <Impact/>
+     </div>
   );
 }
 
