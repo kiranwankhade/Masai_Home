@@ -89,6 +89,7 @@ export default function Navbar() {
   );
 }
 
+
 const DesktopNav = () => {
   const linkColor = useColorModeValue('gray.600', 'gray.200');
   const linkHoverColor = useColorModeValue('red.600', 'white');
@@ -265,3 +266,5 @@ const NAV_ITEMS = [
     href: '#',
   },
 ];
+
+export default Navbar
