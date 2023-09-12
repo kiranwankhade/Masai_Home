@@ -7,6 +7,7 @@ import {
   Icon,
   Image,
   Text,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import Slider from "react-slick";
@@ -26,6 +27,21 @@ const Impact = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    responsive:[
+    {
+      breakpoint: 760,
+      settings:{
+      slidesToShow:2
+      }
+    },
+    {
+      breakpoint: 450,
+      settings:{
+      slidesToShow:1,
+      centerMode:true,
+      }
+    }
+    ]
   };
   const moveRight = () => {
     if (slideRef.current) {
@@ -40,8 +56,8 @@ const Impact = () => {
   return (
     <div>
       <Box w="full">
-        <Heading>
-          <Heading>
+        <Heading fontSize={{base:"20px",md:"25px",lg:'30px'}}>
+          <Heading fontSize={{base:"20px",md:"25px",lg:'30px'}}>
             {" "}
             Our Students are
             <span style={{ color: "#ED0331" }}> Creating Impact</span>
@@ -53,17 +69,25 @@ const Impact = () => {
             />
           </HStack>
         </Heading>
-        <Box
-          display="flex"
+        <SimpleGrid
+          columns={[1, 1, 2]}
           w="80%"
           margin="auto"
           justifyContent="space-between"
           mt="1cm"
+      
         >
-          <Box rounded="md" overflow="hidden" w="50%">
+          <Box
+            w={{ base: "100%", md: "50%", lg: "95%" }}
+            rounded="md"
+            overflow="hidden"
+         
+            mx="auto" // Center the box horizontally
+            height={{base:"7cm",md:'8cm',lg:'9cm'}}
+          >
             <iframe
-              width="606"
-              height="342"
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/tSlit0vgB20"
               title='"Masai Is Building A Great Solution" - Ankush Sachdeva, CEO - ShareChat'
               frameborder="0"
@@ -71,35 +95,36 @@ const Impact = () => {
               allowfullscreen
             ></iframe>
           </Box>
-          <Box w="50%">
+          <Box w="100%" >
             <Slider {...settings} ref={slideRef}>
               {reviews.map((e, index) => (
                 <Box
                   key={index}
                   border="1px solid gray"
-                  height="7cm"
+                  height={{base:"6cm",md:'6cm',lg:"7cm"}}
                   borderRadius="2xl"
-                  p="10px"
+                  p={{base:"5px",md:"5px",lg:"10px"}}
+                  m='10px'
                 >
                   <Box marginRight="0px">
                     <Image src="https://www.masaischool.com/images/linkedin.svg"></Image>
                   </Box>
-                  <Box mt="10px">
+                  <Box m={{base:"5px",md:"5px",lg:"10px"}}>
                     <Text textAlign="left">{e.review}</Text>
                   </Box>
                   <Box display="flex">
-                    <Box mt="10px">
+                    <Box mt={{base:"5px",md:"5px",lg:"10px"}}>
                       <Avatar size="sm" src={e.image}></Avatar>
                     </Box>
-                    <Box ml="10px" mt="10px">
+                    <Box ml={{base:"5px",md:"5px",lg:"10px"}} mt={{base:"5px",md:"5px",lg:"10px"}}>
                       <Text fontWeight="bold" textAlign="left">
                         {e.name}
                       </Text>
                       <Text textAlign="left">{e.position}</Text>
                     </Box>
                   </Box>
-                  <Box m="10px 0px 0px 10px" h="50px" w="50px">
-                    <Image src={e.company_logo} objectFit="contain"></Image>
+                  <Box m="5px 0px 0px 20px" >
+                    <Image src={e.company_logo}h="20px" w="50px" objectFit='contain'></Image>
                   </Box>
                 </Box>
               ))}
@@ -112,25 +137,11 @@ const Impact = () => {
               ></ArrowForwardIcon>
             </Box>
           </Box>
-        </Box>
+        </SimpleGrid>
       </Box>
       <Second />
       <Certificate />
       <News />
-      <div>
-        <Heading>
-          <Heading>
-            {" "}
-            Best-In-Class<span style={{ color: "#ED0331" }}> Curriculum</span>
-          </Heading>
-          <HStack margin={"auto"} border={"0px solid black"} width={"15%"}>
-            <Image
-              src="https://www.masaischool.com/images/new-homepage/yellow-vector.svg"
-              alt=""
-            />
-          </HStack>
-        </Heading>
-      </div>
     </div>
   );
 };
