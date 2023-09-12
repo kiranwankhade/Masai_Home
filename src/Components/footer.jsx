@@ -10,10 +10,7 @@ import {
     chakra,
     useColorModeValue,
 } from '@chakra-ui/react'
-import { FaTwitter, FaYoutube, FaInstagram, FaTelegram } from 'react-icons/fa'
-
-// import { AppStoreBadge } from '#/components/AppStoreBadge'
-// import { PlayStoreBadge } from '#/components/PlayStoreBadge'
+import { FaTwitter, FaYoutube, FaInstagram, FaTelegram } from 'react-icons/fa';
 
 const ListHeader = ({ children }) => {
     return (
@@ -57,6 +54,7 @@ export default function Footer() {
             bg={'black'}
             color={'white'}>
 
+{/* 1 */}
             <Box borderBottomWidth={1}
                 borderColor="grey"
                 borderBottomColor={'grey'}
@@ -68,11 +66,11 @@ export default function Footer() {
                 <Container as={Stack}
                     maxW={'6xl'}
                     py={4}
-                    direction={{ md: 'row' }}
+                    direction={{base:"column",sm:"column", md: 'row' }}
                     spacing={4}
                     justify={{ md: 'center' }}
                     align={{ md: 'center' }}>
-                <Image src="https://www.masaischool.com/images/footer/arrow-gif.gif" align={'center'} width={'70px'} />
+                <Image src="https://www.masaischool.com/images/footer/arrow-gif.gif" display={{base:"none",sm:"none",md:"block",lg:"block"}} align={'center'} width={'70px'} />
                     <span style={{color:"goldenrod",fontWeight:"700"}}>Join the Program</span>
                 <Button bg={'#ED0331'} color="white">
                     Get Your Dream Job
@@ -81,7 +79,7 @@ export default function Footer() {
 
             </Box>
 
-
+{/* 2 */}
             <Box
                 borderBottomWidth={1}
                 borderColor="grey"
@@ -97,7 +95,7 @@ export default function Footer() {
                     spacing={4}
                     justify={{ md: 'space-between' }}
                     align={{ md: 'center' }}>
-                    <Image src="https://www.masaischool.com/images/footer/masai-logo-dark.svg" />
+                    <Image src="https://www.masaischool.com/images/footer/masai-logo-dark.svg" width={{base:"30%",sm:"350%",md:"12%",lg:"11%"}} />
                     <Stack direction={'row'} spacing={6}>
                     <Text color={'grey'}>Follow us -</Text>
                         <SocialButton label={'Twitter'} href={'#'}>
@@ -112,7 +110,7 @@ export default function Footer() {
                     </Stack>
                 </Container>
             </Box>
-
+{/* 3 */}
             <Box m={2}>
                 <Container
                     as={Stack}
@@ -122,7 +120,7 @@ export default function Footer() {
                     spacing={4}
                     justify={{ md: 'space-between' }}
                     align={{ md: 'center' }}>
-                    <Stack direction={'row'} spacing={6}>
+                        <Stack direction={{base:"column",sm:"column", md: 'row' }} spacing={{base:2,md:6,lg:6}} >
                         <Button borderRadius={'20px'}>Full Stack Web Development - Full Time</Button>
                         <Button borderRadius={'20px'}>Data Analytics - Full Time</Button>
                     </Stack>
@@ -135,13 +133,13 @@ export default function Footer() {
                     spacing={4}
                     justify={{ md: 'space-between' }}
                     align={{ md: 'center' }}>
-                    <Stack direction={'row'} spacing={6}>
+                    <Stack direction={{base:"column",sm:"column", md: 'row' }} spacing={{base:2,md:6,lg:6}} >
                         <Button borderRadius={'25px'}>Mobile Development - Full Time</Button>
                         <Button borderRadius={'25px'}>Backend Development - Full Time</Button>
                     </Stack>
                 </Container>
             </Box>
-
+{/* 4 */}
             <Container as={Stack} maxW={'6xl'} py={10}>
                 <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
                     <Stack align={'flex-start'}>
@@ -211,7 +209,7 @@ export default function Footer() {
                     </Stack>
                 </SimpleGrid>
             </Container>
-
+{/* 5 */}
             <Box
                 borderTopWidth={1}
                 borderStyle={'solid'}

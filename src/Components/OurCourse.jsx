@@ -12,7 +12,7 @@ const OurCourse = () => {
                     <HStack margin={'auto'} border={"0px solid black"} width={'20%'}><Image src="https://www.masaischool.com/images/new-homepage/yellow-vector.svg" alt="" /></HStack>
                 </Text>
             </Box>
-            <div style={{ display: "flex", margin: "auto", border: "0px solid black", justifyContent: "center", gap: 40, padding: 10 }}>
+            <Box display= {{md:"flex",lg:"flex"}} margin="auto" align="center" border="0px solid black" justifyContent="center" gap={{md:10,lg:50}} padding="10">
                 <Card maxW='sm'>
                     <CardHeader padding={10} backgroundColor={'#B7B8E5'} align={'center'} borderRadius={'lg'}>
                         <Image
@@ -67,7 +67,7 @@ const OurCourse = () => {
                         </Button>
                     </CardFooter>
                 </Card>
-            </div>
+            </Box>
             <div style={{margin:"10px"}}>
                 <Button bg='#ED0331' color={'white'} p={6}>VIEW ALL COURSES</Button>
             </div>
