@@ -1,4 +1,13 @@
-import { Avatar, Box, Button, Heading, Icon, Image, Text } from "@chakra-ui/react";
+import {
+  Avatar,
+  Box,
+  Button,
+  HStack,
+  Heading,
+  Icon,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,35 +16,42 @@ import { reviews } from "./data";
 import Second from "./Second";
 import Certificate from "./Certification";
 import News from "./News";
-import {ArrowForwardIcon,ArrowBackIcon} from '@chakra-ui/icons'
+import { ArrowForwardIcon, ArrowBackIcon } from "@chakra-ui/icons";
 
 const Impact = () => {
-    const slideRef = useRef(null)
-  
+  const slideRef = useRef(null);
+
   const settings = {
     infinite: false,
-    speed: 100,
+    speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
   };
-  const moveRight=()=>{
+  const moveRight = () => {
     if (slideRef.current) {
-        slideRef.current.slickNext();
-      }
-  }
-  const moveLeft=()=>{
+      slideRef.current.slickNext();
+    }
+  };
+  const moveLeft = () => {
     if (slideRef.current) {
-        slideRef.current.slickPrev();
-      }
-  }
+      slideRef.current.slickPrev();
+    }
+  };
   return (
     <div>
       <Box w="full">
         <Heading>
-          Our Students Are{" "}
-          <Heading as="span" color="red.500">
-            Creating Impact
+          <Heading>
+            {" "}
+            Our Students are
+            <span style={{ color: "#ED0331" }}> Creating Impact</span>
           </Heading>
+          <HStack margin={"auto"} border={"0px solid black"} width={"20%"}>
+            <Image
+              src="https://www.masaischool.com/images/new-homepage/yellow-vector.svg"
+              alt=""
+            />
+          </HStack>
         </Heading>
         <Box
           display="flex"
@@ -44,7 +60,7 @@ const Impact = () => {
           justifyContent="space-between"
           mt="1cm"
         >
-          <Box rounded="md" overflow="hidden" w='50%'>
+          <Box rounded="md" overflow="hidden" w="50%">
             <iframe
               width="606"
               height="342"
@@ -55,7 +71,7 @@ const Impact = () => {
               allowfullscreen
             ></iframe>
           </Box>
-          <Box  w="50%">
+          <Box w="50%">
             <Slider {...settings} ref={slideRef}>
               {reviews.map((e, index) => (
                 <Box
@@ -64,12 +80,11 @@ const Impact = () => {
                   height="7cm"
                   borderRadius="2xl"
                   p="10px"
-                 
                 >
                   <Box marginRight="0px">
                     <Image src="https://www.masaischool.com/images/linkedin.svg"></Image>
                   </Box>
-                  <Box mt='10px'>
+                  <Box mt="10px">
                     <Text textAlign="left">{e.review}</Text>
                   </Box>
                   <Box display="flex">
@@ -83,22 +98,39 @@ const Impact = () => {
                       <Text textAlign="left">{e.position}</Text>
                     </Box>
                   </Box>
-                  <Box m='10px 0px 0px 10px' h='50px' w='50px' >
-                  <Image src={e.company_logo} objectFit='contain'></Image>
+                  <Box m="10px 0px 0px 10px" h="50px" w="50px">
+                    <Image src={e.company_logo} objectFit="contain"></Image>
                   </Box>
                 </Box>
               ))}
             </Slider>
-            <Box float='right' display='flex' mt='10px' p='10px'>
-            <ArrowBackIcon onClick={moveLeft}></ArrowBackIcon>
-            <ArrowForwardIcon ml='20px' onClick={moveRight} ></ArrowForwardIcon>
+            <Box float="right" display="flex" mt="10px" p="10px">
+              <ArrowBackIcon onClick={moveLeft}></ArrowBackIcon>
+              <ArrowForwardIcon
+                ml="20px"
+                onClick={moveRight}
+              ></ArrowForwardIcon>
             </Box>
           </Box>
         </Box>
       </Box>
-      <Second/>
-      <Certificate/>
-      <News/>
+      <Second />
+      <Certificate />
+      <News />
+      <div>
+        <Heading>
+          <Heading>
+            {" "}
+            Best-In-Class<span style={{ color: "#ED0331" }}> Curriculum</span>
+          </Heading>
+          <HStack margin={"auto"} border={"0px solid black"} width={"15%"}>
+            <Image
+              src="https://www.masaischool.com/images/new-homepage/yellow-vector.svg"
+              alt=""
+            />
+          </HStack>
+        </Heading>
+      </div>
     </div>
   );
 };
