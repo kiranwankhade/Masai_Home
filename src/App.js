@@ -10,6 +10,7 @@ import OurCourse from './Components/OurCourse';
 import Masaiverse from './Components/Masaiverse';
 import HiringPartners from './Components/HiringPartners';
 import Curriculum from './Components/Curriculum';
+import Footer from './Components/footer';
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
       <Navbar/>
       <DreamJob/>
       <DrivenOutComes/>
-      <OurCourse/>
+       <OurCourse/>
       <Curriculum/>
       <Masaiverse/>
       <HiringPartners/>
       <Impact/>
+      <Footer/>
      </div>
   );
 }
