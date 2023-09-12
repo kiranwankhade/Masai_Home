@@ -8,11 +8,12 @@ import OurCourse from './Components/OurCourse';
 import Masaiverse from './Components/Masaiverse';
 import HiringPartners from './Components/HiringPartners';
 import Curriculum from './Components/Curriculum';
+import NavbarNew from './Components/NavbarNew';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <NavbarNew/>
 
       <Impact/>
 
