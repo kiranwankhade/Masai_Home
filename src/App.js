@@ -10,14 +10,20 @@ import OurCourse from './Components/OurCourse';
 import Masaiverse from './Components/Masaiverse';
 import HiringPartners from './Components/HiringPartners';
 import Curriculum from './Components/Curriculum';
+import NavbarNew from './Components/NavbarNew';
+
 import Footer from './Components/footer';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+
+      <NavbarNew/>
+
+      <Impact/>
       <DreamJob/>
       <DrivenOutComes/>
+
       <OurCourse/>
       <Curriculum/>
       <Masaiverse/>
