@@ -3,7 +3,7 @@ import React from 'react'
 
 const Curriculum = () => {
     return (
-        <div style={{ marginTop: "40px", marginBottom: "30px" }}>
+        <div style={{ marginTop: "100px", marginBottom: "100px" }}>
             <div>
                 <Heading>
                     <Heading> Best-In-Class<span style={{ color: "#ED0331" }}> Curriculum</span>  &<span style={{ color: "#ED0331" }}> Pedagogy</span> </Heading>

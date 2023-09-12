@@ -10,23 +10,21 @@ import OurCourse from './Components/OurCourse';
 import Masaiverse from './Components/Masaiverse';
 import HiringPartners from './Components/HiringPartners';
 import Curriculum from './Components/Curriculum';
+import Footer from './Components/footer';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <DreamJob/>
-<<<<<<< HEAD
       <DrivenOutComes/>
-    </div>
-=======
-      <OurCourse/>
+       <OurCourse/>
       <Curriculum/>
       <Masaiverse/>
       <HiringPartners/>
       <Impact/>
+      <Footer/>
      </div>
->>>>>>> 95e2cd94b1ce122695487158eed24502b25bcc2e
   );
 }
 
