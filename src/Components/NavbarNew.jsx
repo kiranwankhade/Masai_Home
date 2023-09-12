@@ -66,8 +66,8 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-            <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
-              Sign In
+            <Button as={'a'} fontSize={'sm'} fontWeight={500} variant={'link'} href={'#'} bgColor={'#e5feff'} color={'#6E71CC'} display={{ base: 'none', md: 'inline-flex' }}>
+             REFER & EARN
             </Button>
             <Button
               as={'a'}
