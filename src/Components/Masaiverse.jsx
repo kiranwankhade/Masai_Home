@@ -36,15 +36,15 @@ const Masaiverse = () => {
   ]
 
   return (
-    <div style={{ marginTop: "50px",backgroundColor:"rgba(0, 0, 0, 0.04)" ,paddingTop:"20px",paddingBottom:"20px"}}>
+    <div style={{ marginTop: "50px",backgroundColor:"rgba(0, 0, 0, 0.04)" ,paddingTop:"50px",paddingBottom:"20px"}}>
       <div>
         <Heading fontWeight={'bold'}>Be A Part of Our Thriving</Heading>
         <Heading>
-          <Heading>Tech Community</Heading>
+          <Heading color={'#ED0331'}>Tech Community</Heading>
         <Heading margin={'auto'} border={"0px solid black"} width={'28%'}><Image src="https://www.masaischool.com/images/new-homepage/yellow-vector.svg" alt="" /></Heading>
         </Heading>
       </div>
-      <div style={{margin:"10px", transform: 'scale(1)'}} >
+      <div style={{marginTop:"50px", transform: 'scale(1)'}} >
       <Carousel
         swipeable={true}
         draggable={true}
