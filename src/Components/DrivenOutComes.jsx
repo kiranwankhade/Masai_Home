@@ -13,8 +13,9 @@ import React, { useEffect, useState } from "react";
 const DrivenOutComes = () => {
   return (
     <Box w={"80%"} margin={"auto"} marginTop={"8%"}>
+      <br/>
       <Box>
-        <Text fontSize={"30px"} fontWeight={700}>
+        <Text fontSize={["25px","38px","38px","35px"]} fontWeight={750} mb={["10px"]}>
           <Text>
             {" "}
             Driven By <span style={{ color: "#ED0331" }}> Outcomes</span>{" "}
@@ -23,9 +24,9 @@ const DrivenOutComes = () => {
           <HStack
             margin={"auto"}
             border={"0px solid black"}
-            width={"12%"}
-            mt={"-5px"}
-            marginLeft={"32%"}
+            width={["38%","25%","27%","12%"]}
+            mt={["-80px","-5px","-65px","-5px"]}
+            marginLeft={["46%","32%","36%","32%"]}
           >
             <Image
               src="https://www.masaischool.com/images/new-homepage/yellow-vector.svg"
@@ -33,9 +34,10 @@ const DrivenOutComes = () => {
             />
           </HStack>
         </Text>
+        <br />
       </Box>
       <br />
-      <Flex w="100%" gap={"50px"}>
+      <Flex w="100%" gap={"50px"} flexDirection={["column","row","row","row"]}>
         <Box marginTop={"20px"} flex={2.2}>
           <Box
             color={"#ED0331"}
@@ -44,12 +46,12 @@ const DrivenOutComes = () => {
             borderRadius={"15px"}
           >
             <Box
-              fontSize={"20px"}
+              fontSize={["20px","15px","15px","20px"]}
               display={"flex"}
               flexDirection={"row"}
               justifyContent="center"
               alignItems={"center"}
-              gap={"5px"}
+              gap={["5px","5px","20px","5px"]}
               fontWeight={"700"}
             >
               <Box
@@ -67,14 +69,14 @@ const DrivenOutComes = () => {
                 1
               </Box>
 
-              <Text marginRight={"50px"}>
+              <Text marginRight={["50px","50px","2px","50px"]}>
                 Career {" "}
                 <Text as={"span"}>
                   Launchpad
                   <Image
-                    marginLeft={"100px"}
-                    marginTop={"-5px"}
-                    w={"45%"}
+                    marginLeft={["100px","100px","55px","100px"]}
+                    marginTop={["-5px","-5px","-1px","-5px"]}
+                    w={["45%","55%","55%","45%"]}
                     src="https://www.masaischool.com/images/new-homepage/yellow-vector.svg"
                   />
                 </Text>
@@ -82,7 +84,7 @@ const DrivenOutComes = () => {
             </Box>
           </Box>
 
-          <Flex align="center" marginLeft={"30px"}>
+          <Flex align="center"  marginLeft={["25px","25px","20px","30px"]}>
             <Box borderLeft="3px dashed black" height="50px" mx={2} />
           </Flex>
 
@@ -93,12 +95,12 @@ const DrivenOutComes = () => {
             borderRadius={"15px"}
           >
             <Box
-              fontSize={"20px"}
+              fontSize={["20px","15px","15px","20px"]}
               display={"flex"}
               flexDirection={"row"}
               justifyContent="center"
               alignItems={"center"}
-              gap={"40px"}
+              gap={["5px","5px","3px","40px"]}
               fontWeight={"700"}
             >
               <Box
@@ -115,11 +117,11 @@ const DrivenOutComes = () => {
               >
                 2
               </Box>
-              <Text marginRight={"60px"}>Nurture Ambition</Text>
+              <Text w={'100%'} marginRight={["50px","50px","10px","60px"]}>Nurture Ambition</Text>
             </Box>
           </Box>
 
-          <Flex align="center" marginLeft={"30px"}>
+          <Flex align="center"  marginLeft={["25px","25px","20px","30px"]}>
             <Box borderLeft="3px dashed black" height="50px" mx={2} />
           </Flex>
 
@@ -130,12 +132,12 @@ const DrivenOutComes = () => {
             borderRadius={"15px"}
           >
             <Box
-              fontSize={"20px"}
+              fontSize={["20px","15px","15px","20px"]}
               display={"flex"}
               flexDirection={"row"}
               justifyContent="center"
               alignItems={"center"}
-              gap={"20px"}
+              gap={["40px","40px","2px","20px"]}
               fontWeight={"700"}
             >
               <Box
@@ -153,11 +155,11 @@ const DrivenOutComes = () => {
                 3
               </Box>
 
-              <Text marginRight={"110px"}>Practice Based</Text>
+              <Text w={'100%'} marginRight={["50px","50px","10px","110px"]}>Practice Based</Text>
             </Box>
           </Box>
 
-          <Flex align="center" marginLeft={"30px"}>
+          <Flex align="center"  marginLeft={["25px","25px","20px","30px"]}>
             <Box borderLeft="3px dashed black" height="50px" mx={2} />
           </Flex>
 
@@ -168,12 +170,12 @@ const DrivenOutComes = () => {
             borderRadius={"15px"}
           >
             <Box
-              fontSize={"20px"}
+              fontSize={["20px","15px","15px","20px"]}
               display={"flex"}
               flexDirection={"row"}
               justifyContent="center"
               alignItems={"center"}
-              gap={"20px"}
+              gap={["40px","40px","2px","20px"]}
               fontWeight={"700"}
             >
               <Box
@@ -191,11 +193,11 @@ const DrivenOutComes = () => {
                 4
               </Box>
 
-              <Text marginRight={"70px"}>Industry Readiness</Text>
+              <Text w={'100%'} marginRight={["50px","50px","1px","70px"]}>Industry Readiness</Text>
             </Box>
           </Box>
 
-          <Flex align="center" marginLeft={"25px"}>
+          <Flex align="center" marginLeft={["25px","25px","20px","25px"]}>
             <Box borderLeft="3px dashed black" height="50px" mx={2} />
           </Flex>
 
@@ -206,12 +208,12 @@ const DrivenOutComes = () => {
             borderRadius={"15px"}
           >
             <Box
-              fontSize={"20px"}
+              fontSize={["20px","15px","15px","20px"]}
               display={"flex"}
               flexDirection={"row"}
               justifyContent="center"
               alignItems={"center"}
-              gap={"25px"}
+              gap={["40px","40px","1px","25px"]}
               fontWeight={"700"}
             >
               <Box
@@ -229,7 +231,7 @@ const DrivenOutComes = () => {
                 5
               </Box>
 
-              <Text marginRight={"40px"}>Holistic Development</Text>
+              <Text w={'100%'} marginRight={["50px","50px","1px","40px"]}>Holistic Development</Text>
             </Box>
           </Box>
         </Box>
@@ -240,11 +242,12 @@ const DrivenOutComes = () => {
           bgColor={"#f7f7ff"}
           padding={"15px"}
         >
-          <Heading color={"#686365"} p={"5px"} fontSize={"25px"}>
+          <Heading color={"#686365"} p={"5px"} fontSize={["25px","25px","20px","25px"]}>
             Launch a sustainable career
           </Heading>
           <br />
           <Flex
+            flexDirection={["column","column","column","row"]}
             p={"5px"}
             justifyContent={"space-between"}
             alignItems={"center"}

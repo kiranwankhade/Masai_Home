@@ -16,17 +16,13 @@ function App() {
     <div className="App">
       <Navbar/>
       <DreamJob/>
-<<<<<<< HEAD
       <DrivenOutComes/>
-    </div>
-=======
       <OurCourse/>
       <Curriculum/>
       <Masaiverse/>
       <HiringPartners/>
       <Impact/>
      </div>
->>>>>>> 95e2cd94b1ce122695487158eed24502b25bcc2e
   );
 }
 
