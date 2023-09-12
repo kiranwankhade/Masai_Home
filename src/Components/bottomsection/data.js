@@ -13,7 +13,7 @@ const reviews = [
       name: "Arshdeep",
       review:
         "Hiring experience with Masai is a wow. All the candidates we interviewed were talented, selection was not easy.",
-      position: "Director of Technology and smart",
+      position: "Director of Technology",
       company_logo:
         "https://masai-website-images.s3.ap-south-1.amazonaws.com/svgviewer_png_output_38_4421638b42.png",
       image:

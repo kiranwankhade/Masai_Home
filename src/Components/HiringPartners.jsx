@@ -45,7 +45,7 @@ const HiringPartners = () => {
         'https://masai-website-images.s3.ap-south-1.amazonaws.com/salesken_baefe048ac.svg'
     ]
     return (
-        <div  style={{marginTop:"30px",marginBottom:"30px"}}>
+        <div  style={{marginTop:"100px",marginBottom:"100px"}}>
             <div>
                 <Heading>
                     <Heading>Meet Our <span style={{color:"#ED0331"}}> 4000+</span> Hiring Partners</Heading>
