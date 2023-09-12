@@ -3,7 +3,7 @@ import React from 'react'
 
 const Curriculum = () => {
     return (
-        <div style={{ marginTop: "40px", marginBottom: "30px" }}>
+        <div style={{ marginTop: "100px", marginBottom: "100px" }}>
             <div>
                 <Heading>
                     <Heading> Best-In-Class<span style={{ color: "#ED0331" }}> Curriculum</span>  &<span style={{ color: "#ED0331" }}> Pedagogy</span> </Heading>
@@ -11,15 +11,15 @@ const Curriculum = () => {
                 </Heading>
             </div>
 
-            <Flex justifyContent={'space-between'} gap={10} padding={10}>
+            <Box display={{md:"flex",lg:'flex'}} justifyContent={'space-between'} gap={10} padding={{md:5,lg:10}}>
 
                 {/* first div of scroller */}
-                <Box width={'65%'} maxHeight={'400px'} textAlign={'left'} overflow={'auto'}>
+                <Box width={{md:"90%",lg:"65%"}} maxHeight={{md:'400px',lg:'400px'}} textAlign={'left'} overflow={{md:"auto",lg:'auto'}}>
                     {/* 1 */}
-                    <Card p={7} m={10}>
+                    <Card p={{base:1,md:3,lg:6}} m={10}>
                         <CardHeader>
-                            <Text fontWeight={700} fontSize={'25px'}>
-                                <Text display={'flex'} gap={3}> <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/laptop.svg" alt="" /> 100%  <span style={{ color: "#ED0331" }}> Live </span> Distance Learning</Text>
+                            <Text fontWeight={700} fontSize={{base:"18px",sm:"25px",md:'20px',lg:'25px'}} alignContent={{base:'center',md:"center"}}  >
+                                <Text display={{lg:'flex'}} gap={3} align={{base:'center',md:"center"}}> <Image src="https://www.masaischool.com/images/new-homepage/curriculum-style/laptop.svg" alt="" margin={{base:'auto',md:"auto"}}/> 100%  <span style={{ color: "#ED0331" }}> Live </span> Distance Learning</Text>
                             </Text>
                         </CardHeader>
                         <CardBody>
@@ -30,11 +30,10 @@ const Curriculum = () => {
                     </Card>
 
                     {/* 2 */}
-                    <Card p={7} m={10}>
+                    <Card p={{base:1,md:3,lg:6}} m={10}>
                         <CardHeader>
-                            <Text fontWeight={700} fontSize={'25px'}>
-                                <Text display={'flex'} gap={3}>
-                                    <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/star.svg" alt="" />
+                            <Text fontWeight={700} fontSize={{base:"18px",sm:"25px",md:'20px',lg:'25px'}} align={{base:'center',md:"center"}}>
+                                <Text display={{lg:'flex'}} gap={3} align={{base:'center',md:"center"}}> <Image src="https://www.masaischool.com/images/new-homepage/curriculum-style/star.svg" alt="" margin={{base:'auto',md:"auto"}}/>
                                     Generative   <span style={{ color: "#ED0331" }}> AI integrated </span> Program</Text>
                             </Text>
                         </CardHeader>
@@ -46,11 +45,10 @@ const Curriculum = () => {
                     </Card>
 
                     {/* 3 */}
-                    <Card p={7} m={10}>
+                     <Card p={{base:1,md:3,lg:6}} m={10}>
                         <CardHeader>
-                            <Text fontWeight={700} fontSize={'25px'}>
-                                <Text display={'flex'} gap={3}>
-                                    <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/bulb.svg" alt="" />
+                            <Text fontWeight={700} fontSize={{base:"18px",sm:"25px",md:'20px',lg:'25px'}} align={{base:'center',md:"center"}}>
+                                <Text display={{lg:'flex'}} gap={3} align={{base:'center',md:"center"}}> <Image src="https://www.masaischool.com/images/new-homepage/curriculum-style/bulb.svg" alt="" margin={{base:'auto',md:"auto"}} />
                                     <span style={{ color: "#ED0331" }}> Industry Ready </span> Curriculum</Text>
                             </Text>
                         </CardHeader>
@@ -62,11 +60,10 @@ const Curriculum = () => {
                     </Card>
 
                     {/* 4 */}
-                    <Card p={7} m={10}>
+                    <Card p={{base:1,md:3,lg:6}} m={10}>
                         <CardHeader>
-                            <Text fontWeight={700} fontSize={'25px'}>
-                                <Text display={'flex'} gap={3}>
-                                    <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/check.svg" alt="" />
+                            <Text fontWeight={700} fontSize={{base:"18px",sm:"25px",md:'20px',lg:'25px'}} align={{base:'center',md:"center"}}>
+                                <Text display={{lg:'flex'}} gap={3} align={{base:'center',md:"center"}}> <Image  src="https://www.masaischool.com/images/new-homepage/curriculum-style/check.svg" alt="" margin={{base:'auto',md:"auto"}}/>
                                     Focus On Learning <span style={{ color: "#ED0331" }}>  Agility </span> </Text>
                             </Text>
                         </CardHeader>
@@ -79,11 +76,10 @@ const Curriculum = () => {
                     </Card>
 
                     {/* 5 */}
-                    <Card p={7} m={10}>
+                    <Card p={{base:1,md:3,lg:6}} m={10}>
                         <CardHeader>
-                            <Text fontWeight={700} fontSize={'25px'}>
-                                <Text display={'flex'} gap={3}>
-                                    <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/certificate.svg" alt="" />
+                            <Text fontWeight={700} fontSize={{base:"18px",sm:"25px",md:'20px',lg:'25px'}} align={{base:'center',md:"center"}}>
+                                <Text display={{lg:'flex'}} gap={3} align={{base:'center',md:"center"}}> <Image src="https://www.masaischool.com/images/new-homepage/curriculum-style/certificate.svg" alt="" margin={{base:'auto',md:"auto"}}/>
                                     Industry Ready In Just <span style={{ color: "#ED0331" }}>25-35 weeks</span></Text>
                             </Text>
                         </CardHeader>
@@ -96,10 +92,10 @@ const Curriculum = () => {
                 </Box>
 
                 {/* second div of scroller */}
-                <Box >
+                <Box display={{base:"none",sm:"none",md:"block",lg:"block"}}>
                     <Image src="https://www.masaischool.com/images/new-homepage/curriculum-style/course-image1.webp" borderRadius={'10px'} />
                 </Box>
-            </Flex>
+            </Box>
 
 
             <div style={{ margin: "20px" }}>
