@@ -49,40 +49,40 @@ const DreamJob = () => {
   const currentItem = dataObjects[currentIndex];
 
   return (
-    <Box w={"100%"} mt={"70px"}>
+    <Box bgColor={'#fcfafa'} w={"100%"} mt={["70px","70px","100px","70px"]}>
       <Image
         width={"100%"}
         src="https://masai-website-images.s3.ap-south-1.amazonaws.com/desktop_3.webp"
       />
       <br />
       <br />
-
-      <Flex
-        w={"85%"}
+      <Flex  
+        flexDirection={["column","column","column","row"]}
+        w={["80%","80%","58%","85%"]}
         margin={"auto"}
         justifyContent={"space-between"}
         alignItems={"center"}
-        gap={"150px"}
-        // textAlign={"justify"}
+        gap={["60px","70px","80px","150px"]}
+        marginBottom={'40px'}
       >
-        <Box w={"100%"} textAlign={"justify"}>
+        <Box w={"100%"} textAlign={["center","center","center","justify"]}>
           <Box
             color={"black"}
             fontSize={["20px", "20px", "20px", "35px"]}
             fontWeight={"800"}
             lineHeight={"43px"}
-            textAlign={"justify"}
+            textAlign={["center","center","center","justify"]}
           >
             <h1>Realise Your Potential</h1>
-
+              
             <Box display={"inline"}>
-              With
-              <Text as={"span"} color={"#ed0331"} marginLeft={"10px"}>
+              With {" "}
+              <Text as={"span"} color={"#ed0331"}>
                 Assured Outcomes
                 <Image
-                  marginLeft={"105px"}
-                  marginTop={"-7px"}
-                  w={"50%"}
+                  marginLeft={["105px","105px","160px","105px"]}
+                  marginTop={"-8.5px"}
+                  w={["50%","50%","40%","50%"]}
                   src="https://www.masaischool.com/images/new-homepage/yellow-vector.svg"
                 />
               </Text>
@@ -99,7 +99,8 @@ const DreamJob = () => {
           <Text
             fontSize={"18px"}
             w={"80%"}
-            textAlign={"justify"}
+            margin={['auto','auto','auto','0']}
+            textAlign={["center","center","center","justify"]}
             fontWeight={400}
           >
             India’s only outcome-based career institute. Enter the tech
@@ -111,14 +112,18 @@ const DreamJob = () => {
           </Button>
         </Box>
 
-        <Box w={"100%"}>
+        <Box w={["100%","90%","50%","85%"]}>
 
 
-        <Box position="relative" w="500px" h="450px">
+        <Box position="relative" 
+        w={["300px","400px","400px","500px"]} 
+        h={["250px","350px","350px","450px"]}
+        margin={'auto'}
+        >
                 <Box
                 position="absolute"
-                w="400px"
-                h="500px"
+                w={["300px","400px","300px","400px"]}
+                h={["200px","300px","300px","500px"]}
                 border="1px solid #6793ea"
                 transform="rotate(-8deg)"
                 zIndex="1"
@@ -126,8 +131,8 @@ const DreamJob = () => {
                 />
                 <Box
                 position="absolute"
-                w="400px"
-                h="500px"
+                w={["300px","400px","300px","400px"]}
+                h={["250px","300px","300px","500px"]}
                 zIndex="2"
                 borderRadius={"15px"}
                 backgroundColor="#d6e2fa"
@@ -138,21 +143,23 @@ const DreamJob = () => {
                     w="90%"
                     h="75%"
                     margin={"auto"}
-                    mt="125px"
+                    mt={["62px","125px","75px","125px"]}
                 />
                 </Box>
     
                 <Box
                 position="relative"
                 display="inline-block"
-                w="350px"
-                marginTop={"270px"}
-                marginLeft={"-110%"}
+                w={["300px","300px","300px","350px"]}
+                mt={["180px","270px","250px","275px"]}
+                marginLeft={["0%","-2%","-25%","-110%"]}
                 zIndex={5}
                 textColor={"black"}
-                backgroundColor="rgba(255, 255, 255, 0.6)"
+
+                backgroundColor={["rgba(255, 255, 255, 0.9)","rgba(255, 255, 255, 0.9)","rgba(255, 255, 255, 0.9)","rgba(255, 255, 255, 0.6)"]}
+
                 borderRadius={"15px"}
-                textAlign={"justify"}
+                textAlign={["center","center","center","justify"]}
                 >
                 <Text fontSize={"13px"}  padding='2%' display="inline-block">
                     <span
@@ -182,7 +189,6 @@ const DreamJob = () => {
                 <br />
                 <br />
                 <br />
-                <br />
                 <Box padding={'2%'}>
                     <Text as={"h3"} fontSize={"13px"} textAlign={"justify"} >
                     {currentItem.name}
@@ -200,6 +206,8 @@ const DreamJob = () => {
         
         </Box>
       </Flex>
+      <br />
+      <br />
     </Box>
   );
 };

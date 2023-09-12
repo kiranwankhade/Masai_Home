@@ -18,7 +18,7 @@ function App() {
       <Navbar/>
       <DreamJob/>
       <DrivenOutComes/>
-       <OurCourse/>
+      <OurCourse/>
       <Curriculum/>
       <Masaiverse/>
       <HiringPartners/>
