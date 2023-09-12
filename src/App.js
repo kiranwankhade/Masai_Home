@@ -17,13 +17,9 @@ import Footer from './Components/footer';
 function App() {
   return (
     <div className="App">
-
       <NavbarNew/>
-
-      <Impact/>
       <DreamJob/>
       <DrivenOutComes/>
-
       <OurCourse/>
       <Curriculum/>
       <Masaiverse/>
