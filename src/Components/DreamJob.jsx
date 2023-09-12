@@ -49,7 +49,7 @@ const DreamJob = () => {
   const currentItem = dataObjects[currentIndex];
 
   return (
-    <Box bgColor={'#fcfafa'} w={"100%"} mt={["70px","70px","100px","70px"]}>
+    <Box bgColor={'#fcfafa'} w={"100%"} >
       <Image
         width={"100%"}
         src="https://masai-website-images.s3.ap-south-1.amazonaws.com/desktop_3.webp"
